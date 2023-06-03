@@ -103,5 +103,16 @@ function drag(e) {
 
 }
 
+// Column Allows for Item to Drop
+function allowDrop(e) {
+  e.preventDefault();
+}
+
+// Dropping Item in Column
+function drop(e) {
+  e.preventDefault();
+}
+
+
 // On Load
 updateDOM();
