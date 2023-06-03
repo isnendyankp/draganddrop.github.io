@@ -110,7 +110,7 @@ function allowDrop(e) {
 
 // When Item Enters Column Area
 function dragEnter(column) {
-  console.log(listColumns[column]);
+  listColumns[column].classList.add('over');
 }
 
 // Dropping Item in Column
