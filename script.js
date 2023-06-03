@@ -20,6 +20,7 @@ let onHoldListArray = [];
 let listArrays = [];
 
 // Drag Functionality
+let draggedItem;
 
 
 // Get Arrays from localStorage if available, set default values if not
@@ -58,7 +59,7 @@ function createItemEl(columnEl, column, item, index) {
   listEl.classList.add('drag-item');
   listEl.textContent = item;
   listEl.draggable = true;
-
+  listEl.setAttribute('ondragstart', 'drag(event)');
   // Append
   columnEl.appendChild(listEl);
 
@@ -95,7 +96,12 @@ function updateDOM() {
 
 }
 
+// When Item Starts Dragging
+function drag(e) {
+  draggedItem = e.target;
+  console.log('draggedItem:', draggedItem);
+
+}
+
 // On Load
 updateDOM();
-
-
