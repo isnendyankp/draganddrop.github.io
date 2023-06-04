@@ -116,6 +116,10 @@ function dragEnter(column) {
 // Dropping Item in Column
 function drop(e) {
   e.preventDefault();
+  // Remove Background Color/Padding
+  listColumns.forEach((column) => {
+    column.classList.remove('over');
+  });
 }
 
 
