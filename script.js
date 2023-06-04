@@ -96,6 +96,12 @@ function updateDOM() {
 
 }
 
+// Allows arrays to reflect Drag and Drop items
+function rebuildArrays() {
+  console.log(backlogList.children);
+  console.log(progressList.children);
+}
+
 // When Item Starts Dragging
 function drag(e) {
   draggedItem = e.target;
@@ -124,6 +130,7 @@ function drop(e) {
   // Add item to Column
   const parent = listColumns[currentColumn];
   parent.appendChild(draggedItem);
+  rebuildArrays();
 }
 
 
