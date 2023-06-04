@@ -92,8 +92,8 @@ function updateDOM() {
     createItemEl(onHoldList, 0, onHoldItem, index);
   });
   // Run getSavedColumns only once, Update Local Storage
-
-
+  updatedOnLoad = true;
+  updateSavedColumns();
 }
 
 // Allows arrays to reflect Drag and Drop items
