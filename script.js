@@ -98,8 +98,6 @@ function updateDOM() {
 
 // Allows arrays to reflect Drag and Drop items
 function rebuildArrays() {
-  console.log(backlogList.children);
-  console.log(progressList.children);
   backlogListArray = [];
   for (let i = 0; i < backlogList.children.length; i++) {
     backlogListArray.push(backlogList.children[i].textContent);
@@ -122,8 +120,6 @@ function rebuildArrays() {
 // When Item Starts Dragging
 function drag(e) {
   draggedItem = e.target;
-  console.log('draggedItem:', draggedItem);
-
 }
 
 // Column Allows for Item to Drop
