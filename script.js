@@ -98,7 +98,10 @@ function updateDOM() {
 
 // Add to Column List, Reset Textbox
 function addToColumn(column) {
-  console.log(addItems[column].textContent);
+  const itemText = addItems[column].textContent;
+  const selectedArray = listArrays[column];
+  selectedArray.push(itemText);
+  updateDOM();
 }
 
 // Show Add Item Input Box
