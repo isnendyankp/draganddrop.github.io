@@ -95,6 +95,12 @@ function updateDOM() {
   updateSavedColumns();
 }
 
+// Update Item - Delete if necessary, or update Array value
+function updateItem(id, column) {
+  const selectedArray = listArrays[column];
+  console.log(selectedArray);
+}
+
 // Add to Column List, Reset Textbox
 function addToColumn(column) {
   const itemText = addItems[column].textContent;
