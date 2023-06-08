@@ -48,6 +48,11 @@ function updateSavedColumns() {
   });
 }
 
+// Filter Array to remove empty values
+function filterArray(array) {
+  
+}
+
 // Create DOM Elements for each list item
 function createItemEl(columnEl, column, item, index) {
   // List Item
