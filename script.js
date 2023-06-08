@@ -50,9 +50,8 @@ function updateSavedColumns() {
 
 // Filter Array to remove empty values
 function filterArray(array) {
-  console.log (array);
   const filteredArray = array.filter(item => item !== null);
-  console.log (filteredArray);
+  return filteredArray;
 }
 
 
@@ -114,7 +113,6 @@ function updateItem(id, column) {
     if (!selectedColumnEl[id].textContent) {
       delete selectedArray[id];
     }
-    console.log(selectedArray); 
     updateDOM();
 }
 
