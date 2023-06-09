@@ -112,6 +112,8 @@ function updateItem(id, column) {
   const selectedColumnEl = listColumns[column].children;
     if (!selectedColumnEl[id].textContent) {
       delete selectedArray[id];
+    } else {
+      selectedArray[id] = selectedColumnEl[id].textContent;
     }
     updateDOM();
 }
